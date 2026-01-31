@@ -10,6 +10,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
+
 <body>
 
   <!-- NAVBAR -->
@@ -602,13 +603,27 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on 31 JAN 2026 — By Yaa Kesewaa Yeboah</p>
+        <p>Pravin Mishra Portfolio v1.0 — <span id="deployDate"></span> — By Yaa Kesewaa Yeboah</p>
       </div>
 
     </div>
   </footer>
 
 
+ <script>
+  (function () {
+    const el = document.getElementById("deployDate");
+    if (!el) return;
+
+    const d = new Date();
+    const day = String(d.getDate()).padStart(2, "0");
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const mon = months[d.getMonth()];
+    const year = d.getFullYear();
+
+    el.textContent = `${day} ${mon} ${year}`;
+  })();
+  </script>
 
 </body>
 
