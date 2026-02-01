@@ -40,3 +40,92 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+
+Perfect — this is a **documentation task**, not coding gymnastics.
+I’ll give you a **clean, professional README section** you can paste almost verbatim, plus a **tiny JS snippet** that matches the assignment *exactly*.
+
+You can use **Option A (JS)** — it looks more “engineering-minded” and is still beginner-friendly.
+
+---
+
+## 📌 Footer Version & Deploy Date
+
+This project includes a visible footer on the homepage to provide basic deployment provenance.
+
+### Footer Requirement
+
+The footer displays:
+
+* Application name and version
+* Deployment date
+* Author
+
+Example footer text:
+
+```
+Pravin Mishra Portfolio v1.0 — Deployed on 02 Feb 2026 — By <Your Name>
+```
+
+---
+
+## 🛠 How the Deploy Date Is Generated
+
+The deploy date is generated **dynamically at runtime** using a small JavaScript snippet.
+When the page loads, JavaScript calculates the current date and injects it into the footer in `DD Mon YYYY` format.
+
+This ensures the footer always reflects the date of the latest deployment without hard-coding the value.
+
+---
+
+## 💻 Code Snippet
+
+### Footer HTML
+
+```html
+<footer>
+  <p>
+    Pravin Mishra Portfolio v1.0 — Deployed on
+    <span id="deployDate"></span> — By <Your Name>
+  </p>
+</footer>
+```
+
+### JavaScript (Dynamic Date)
+
+```html
+<script>
+  const deployDate = new Date();
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  document.getElementById('deployDate').textContent =
+    deployDate.toLocaleDateString('en-GB', options);
+</script>
+```
+
+---
+
+## ✅ Verification
+
+* The footer is visible on the live EC2 deployment.
+* The deploy date updates automatically on each deployment.
+* Changes are tracked through Git commits and Jira sprint tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

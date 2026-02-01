@@ -1128,6 +1128,13 @@ section {
   font-size: 14px;
 }
 
+/* Footer text readability & spacing (Day 3) */
+.footer-bottom p {
+  margin: 6px 0;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
 .footer-bottom span {
   color: #facc15;
 }
