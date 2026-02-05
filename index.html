@@ -602,8 +602,18 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on 04-Feb-2026  — By AJAH Callista Ijeoma</p>
+        <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">04-Feb-2026</span>  — By AJAH Callista Ijeoma</p>
       </div>
+
+      <script>
+        const d = new Date();
+        const formattedDate = d.toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+        });
+        document.getElementById("deployDate").textContent = formattedDate.replace(/\//g, ' ');
+      </script>
 
     </div>
   </footer>
