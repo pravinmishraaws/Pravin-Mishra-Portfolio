@@ -602,7 +602,20 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-      </div>
+        <p>Pravin Mishra Portfolio v1.0 — <span id="deployDate"></span> — By Ntando Mvubu</p>
+        </div>
+
+        <script>
+          const today = new Date();
+
+          const day = String(today.getDate()).padStart(2, "0");
+          const month = today.toLocaleString("en-US", { month: "short" });
+          const year = today.getFullYear();
+
+          document.getElementById("deployDate").textContent =
+            `${day} ${month} ${year}`;
+        </script>
+
 
     </div>
   </footer>
