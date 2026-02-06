@@ -1,4 +1,4 @@
-* {
+OB* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1142,4 +1142,20 @@ section {
     flex-direction: column;
     text-align: center;
   }
+/* === Day 3: Footer polish & accessibility === */
+.footer-bottom p {
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom p {
+    font-size: 15px;
+  }
+}
+
 }
