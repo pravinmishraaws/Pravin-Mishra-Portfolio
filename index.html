@@ -603,8 +603,18 @@
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
       </div>
-<p>Pravin Mishra Portfolio v1.0 — Deployed on 06 Feb. 2026 — By Anthonia Adekunle</p>
+<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"> 06 Feb. 2026</span> — By Anthonia Adekunle</p>
     </div>
+
+    <span id="deploydate"></span>
+
+<script>
+     document.addEventListener("DOMContentLoaded", () => {
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById("deployDate").textContent = today;
+  });
+</script>
+
   </footer>
 
 
