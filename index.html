@@ -602,11 +602,19 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on 05-02-2026 — By Vincent Onotu Bello</Student></p>
+        <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Vincent Onotu Bello</Student></p>
       </div>
 
     </div>
   </footer>
+
+<script>
+  const deployDate = document.getElementById("deployDate");
+  const today = new Date();
+
+  const options = { day: "2-digit", month: "short", year: "numeric" };
+  deployDate.textContent = today.toLocaleDateString("en-GB", options);
+</script>
 
 
 
