@@ -40,3 +40,17 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+## Footer Requirement
+- Shows version, deploy date, and author.
+- Date is generated dynamically using JavaScript.
+
+### Code Snippet
+<footer>
+  Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Kingsley Simeon
+</footer>
+<script>
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  document.getElementById('deployDate').innerText =
+    new Date().toLocaleDateString('en-GB', options);
+</script>
