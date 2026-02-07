@@ -1143,3 +1143,20 @@ section {
     text-align: center;
   }
 }
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #f1f1f1;   /* lighter text for readability */
+  font-size: 16px;  /* slightly larger font */
+  line-height: 1.6; /* better spacing */
+}
+
+.footer-bottom span {
+  color: #facc15;   /* highlight the date in yellow */
+  font-weight: bold;
+}
