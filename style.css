@@ -1125,11 +1125,15 @@ section {
   flex-wrap: wrap;
   gap: 10px;
   color: #888;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .footer-bottom span {
   color: #facc15;
+}
+
+.footer-bottom p{
+  color: #ec4899;
 }
 
 /* Responsive */
