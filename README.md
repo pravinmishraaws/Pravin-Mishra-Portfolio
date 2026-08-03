@@ -40,3 +40,19 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+---
+
+## Footer Version & Deploy Date (Week 5 Assignment)
+
+The homepage, privacy, and terms pages display a footer with the site version, deploy date, and author name:
+
+Pravin Mishra Portfolio v1.0 — Deployed on 03 Aug 2026 — By Ekweozor Victoria Nkemakonam
+
+Approach used: Deployment-time update.
+
+The deploy date is not generated automatically by code. Instead, the date is updated manually in the footer text each time a new deployment is made, using a simple find-and-replace command before deploying:
+
+sed -i 's/Deployed on OLD_DATE/Deployed on NEW_DATE/' index.html privacy.html terms.html
+
+This keeps the implementation simple and avoids adding JavaScript dependencies for a static site, while still ensuring the footer accurately reflects the date of each deployment.
