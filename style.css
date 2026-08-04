@@ -970,12 +970,11 @@ section {
   }
 }
 
-
 /* FOOTER */
 .footer {
   background: #000;
   color: #fff;
-  padding: 80px 20px 40px;
+  padding: 90px 24px 48px;
 }
 
 .footer-container {
@@ -997,9 +996,10 @@ section {
 }
 
 .footer-brand p {
-  color: #aaa;
-  line-height: 1.6;
+  color: #ccc;
+  line-height: 1.7;
   max-width: 420px;
+  font-size: 15px;
 }
 
 /* Socials */
@@ -1044,7 +1044,8 @@ section {
 
 .footer ul a {
   text-decoration: none;
-  color: #aaa;
+  color: #ccc;
+  font-size: 15px;
   transition: 0.3s;
 }
 
@@ -1081,13 +1082,15 @@ section {
 /* Bottom */
 .footer-bottom {
   border-top: 1px solid #222;
-  padding-top: 20px;
+  padding-top: 24px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
-  color: #888;
+  gap: 12px;
+  color: #ccc;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer-bottom span {
