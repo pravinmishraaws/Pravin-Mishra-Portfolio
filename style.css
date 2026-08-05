@@ -1097,7 +1097,7 @@ section {
 
 #custom-footer-accent {
   /* Typography */
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   letter-spacing: 0.02em;
 
@@ -1107,8 +1107,8 @@ section {
   margin-bottom: 0;
 
   /* Enhanced Contrast */
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: #ebdfdf;
+  color: #493434;
 }
 
 
