@@ -1094,6 +1094,24 @@ section {
   color: var(--gold);
 }
 
+
+#custom-footer-accent {
+  /* Typography */
+  font-size: 1.35rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+
+  /* Spacing */
+  padding: 40px 24px;
+  margin-top: 48px;
+  margin-bottom: 0;
+
+  /* Enhanced Contrast */
+  background-color: #ecdcdc;
+  color: #201515;
+}
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .footer-grid {

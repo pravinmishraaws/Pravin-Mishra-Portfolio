@@ -36,7 +36,30 @@ Original:
 Add this line (example):
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+<p><strong>Deployed by:</strong> DMI Cohort 3 | Temitope Ademola-Davids | Group 3 | Week 5 | 04-08-2026</p>
 ```
+
+
+To update the footer dynamically using Javascript, I added this code snippet below in the footer of the index page.
+
+<!-- Put this where you want the date to show -->
+
+/** <span id="deployDate"></span>
+
+<!-- Put this script right before your closing </body> tag -->
+<script>
+  const today = new Date();
+  
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-GB', options).replace(/ /g, ' ');
+  
+  document.getElementById('deployDate').textContent = formattedDate;
+</script>
+
+*/
+The functions called are explained below: 
+new Date(): Gets the current date and time.
+toLocaleDateString('en-GB', options): Automatically converts the date into the exact DD Mon YYYY style (for example, 04 Aug 2026) using British English formatting rules.
+textContent: Safely injects the final text string into your span element
 
 ✅ This proof must be visible in your browser screenshot submission.
